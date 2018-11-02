@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title="Strona do logowania"      
+        style 
+            include ../assets/style.css   
+    body
+        //jak dodać plik style.css i script.js do link w login.pug i google.pug
+        include ./header.pug
+        form.container
+            .form-group
+                label(for='name') Imię:
+                input#name.form-control(type='text' placeholder="Jan")
+            .form-group
+                label(for='lastName') Nazwisko:
+                input#last_name.form-control(type='text' placeholder="Kowalski")
+            .form-link
+                a(href= url)
+                    button(type="button") Zaloguj  
+        include ./footer.pug
+    script
+        include ../assets/script.js
